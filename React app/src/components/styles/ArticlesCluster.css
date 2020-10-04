@@ -1,0 +1,71 @@
+.box.articles-cluster-container {
+  overflow: hidden;
+  background-image: linear-gradient(to bottom right, whitesmoke, snow);
+  box-shadow: 0 0 10px 2px lightgray;
+  padding: 0px;
+  animation: fadeInImg linear;
+  animation-fill-mode: forwards;
+  animation-duration: 0.7s;
+  will-change: opacity;
+}
+
+@keyframes fadeInImg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.articles-cluster-visible-content {
+  padding: 1em;
+  position: absolute;
+  width: 100%;
+}
+
+.articles-cluster-invisible-content {
+  margin: 1em;
+  visibility: hidden;
+}
+
+.articles-column {
+  overflow: hidden;
+  position: relative;
+}
+
+.images-column {
+  overflow: hidden;
+}
+/*! purgecss start ignore */
+.slide-articles-enter {
+  -webkit-transform: translateY(-100%);
+  will-change: transform;
+}
+.slide-articles-enter.slide-articles-enter-active {
+  -webkit-transform: translateY(0%);
+  transition: transform 300ms;
+}
+
+.slide-articles-exit {
+  transform: translateY(0%);
+  opacity: 1;
+  will-change: transform, opacity;
+}
+.slide-articles-exit.slide-articles-exit-active {
+  transform: translateY(+100%);
+  opacity: 0;
+  transition: transform 300ms, opacity 300ms;
+}
+.slide-articles-exit-done {
+  display: none;
+}
+/*! purgecss end ignore */
+.img-loaded {
+  animation: fadeInImg cubic-bezier(0.23, 1, 0.32, 1) 1;
+  /*position: relative;*/
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 0.7s;
+  animation-delay: 0.1s;
+}

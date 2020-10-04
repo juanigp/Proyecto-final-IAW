@@ -1,0 +1,44 @@
+/*! purgecss start ignore */
+.carousel-transition-group {
+  min-height: 200px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  object-position: center;
+  object-fit: cover;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+  overflow: hidden;
+  position: absolute;
+  left: 0%;
+}
+
+.slide-carousel-enter {
+  transform: translateX(-100%);
+  will-change: transform;
+  z-index: 1;
+}
+.slide-carousel-enter.slide-carousel-enter-active {
+  transform: translateX(-0%);
+  transition: transform 300ms;
+  transition-delay: 1s;
+}
+
+.slide-carousel-exit {
+  transform: translateX(-0%);
+  will-change: transform;
+}
+.slide-carousel-exit.slide-carousel-exit-active {
+  transform: translateX(100%);
+  transition: transform 300ms;
+  transition-delay: 1s;
+}
+.slide-carousel-exit-done {
+  display: none;
+}
+/*! purgecss end ignore */
