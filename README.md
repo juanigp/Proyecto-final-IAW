@@ -1,6 +1,8 @@
 # Proyecto-final-IAW: news.data
 
-### Scraper de noticias, disponible en www.newsdata.com.ar
+### Noticias del día de distintos medios, agrupadas por el evento que cubren  
+### disponible en www.newsdata.com.ar  
+### presentación: https://youtu.be/3hITON74GvY
 
 ### Funcionamiento básico
 
